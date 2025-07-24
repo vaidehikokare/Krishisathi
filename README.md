@@ -67,4 +67,13 @@ Crop Disease Detection System  # Project Root: KrishiSathi
 ├── README.md
 └── tox.ini
 
+## 📽 Demo
+
+👉 [Click here to view the project demo on LinkedIn](https://www.linkedin.com/posts/vaidehi-kokare-9012aa273_krishisathi-aiinagriculture-django-activity-7340650091248037888-I-2e?utm_source=share&utm_medium=member_desktop&rcm=ACoAAELI-pEBeSyLhk61IR1r3LkwAw_SLypR2Mo)
+
+The demo includes a walkthrough of:
+- Crop disease detection using VGG16
+- Digital marketplace for farmers
+- Real-time weather updates
+- Agri-news feed powered by web scraping
 
