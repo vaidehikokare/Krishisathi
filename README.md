@@ -1,57 +1,70 @@
-Crop Disease Detection System
-==============================
+# 🌾 KrishiSathi – Empowering Farmers with AI & Technology
 
-Crop Disease Detection System
+> **A full-stack AI-based agricultural platform for smart farming.**
 
-Project Organization
-------------
+**KrishiSathi** is an end-to-end Django-powered platform designed for farmers, integrating **AI-powered crop disease detection**, a **digital marketplace**, **weather forecasting**, and **agri-news updates** — all in one place. It aims to support small and mid-scale farmers with actionable insights and digital tools to improve crop health, productivity, and market access.
 
-    ├── LICENSE
-    ├── Makefile           <- Makefile with commands like `make data` or `make train`
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external       <- Data from third party sources.
-    │   ├── interim        <- Intermediate data that has been transformed.
-    │   ├── processed      <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    │
-    ├── docs               <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                         the creator's initials, and a short `-` delimited description, e.g.
-    │                         `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-    │                         generated with `pip freeze > requirements.txt`
-    │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                <- Source code for use in this project.
-    │   ├── __init__.py    <- Makes src a Python module
-    │   │
-    │   ├── data           <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features       <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models         <- Scripts to train models and then use trained models to make
-    │   │   │                 predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+---
+
+## 🔑 Key Features
+
+### 🩺 1. Crop Disease Detection
+- Upload a leaf image and get instant disease prediction using a **VGG16 deep learning model**.
+- Detects diseases such as:
+  - Spider Mite
+  - Rust
+  - Leaf Blight, etc.
+- Trained with transfer learning on a well-curated dataset.
+
+### 🛒 2. Digital Marketplace
+- Farmers can **sell** or **buy** agricultural tools, seeds, and products.
+- Easy-to-use interface for listing products and making transactions.
+
+### 🌦️ 3. Weather Forecasting
+- Live weather forecasts using **web scraping** from trusted sources.
+- Helps farmers plan irrigation, sowing, and harvesting.
+
+### 📰 4. Agriculture News Feed
+- Get the **latest agricultural and climate news** via scraping.
+- Keeps farmers updated and informed.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer        | Technologies Used                                   |
+|--------------|-----------------------------------------------------|
+| Frontend     | HTML, CSS, Bootstrap                                |
+| Backend      | Django (Python)                                     |
+| AI Model     | VGG16 (Transfer Learning using Keras/TensorFlow)    |
+| Database     | MySQL                                               |
+| Web Scraping | BeautifulSoup, Requests                             |
+| Project Structure | Cookiecutter Data Science Template             |
+
+---
+
+## 📁 Project Structure
+
+```bash
+Crop Disease Detection System  # Project Root: KrishiSathi
+├── data/
+│   ├── raw/                  # Original image datasets
+│   ├── processed/            # Preprocessed/augmented data
+│
+├── models/                   # Trained AI/ML models
+├── notebooks/                # Data exploration, training experiments
+├── reports/                  # Visualizations, model metrics
+├── src/
+│   ├── data/                 # Data loading/transformation scripts
+│   ├── features/             # Feature engineering
+│   ├── models/               # Model training/prediction
+│   └── visualization/        # Visual output of model performance
+│
+├── docs/                     # Project documentation (Sphinx)
+├── requirements.txt          # Python dependencies
+├── setup.py                  # Install project as package
+├── LICENSE
+├── README.md
+└── tox.ini
 
 
---------
-
-<p><small>Project based on the <a target="_blank" href="https://drivendata.github.io/cookiecutter-data-science/">cookiecutter data science project template</a>. #cookiecutterdatascience</small></p>
